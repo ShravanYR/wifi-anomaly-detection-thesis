@@ -1,0 +1,200 @@
+# ==========================================
+# SESSION_START=2024-04-06T14:18:30
+# INTERVAL=10s
+# HOSTNAME=WLAN-4581b7
+# KERNEL=5.15.197
+# ==========================================
+###SNAP_BEGIN ts=2024-04-06T14:18:30 n=1###
+###APSTATS_BEGIN###
+Error received: -22 
+AP Level Stats:
+
+WLAN Stats:
+Tx Data Packets                 = 48076
+Tx Data Bytes                   = 3463615
+Rx Data Packets                 = 60151
+Rx Data Bytes                   = 78325695
+Tx Unicast Data Packets         = 47608
+Tx Multi/Broadcast Data Packets = 468
+Resource Utilization (0-255)    = <DISABLED>
+Average Tx Rate (kbps)          = 52833
+Average Rx Rate (kbps)          = 81855
+Rx PHY errors                   = 24
+Rx CRC errors                   = 0
+Rx MIC errors                   = 0
+Rx Decryption errors            = 0
+Rx PN errors                    = 0
+Rx errors                       = 0
+Tx failures                     = 25
+Tx Dropped                      = 0
+Throughput (kbps)               = <DISABLED>
+Total PER (%)                   = 0
+PER over configured period (%)  = <DISABLED>
+
+Radio Level Stats: wifi0
+Tx Data Packets                 = 48076
+Tx Data Bytes                   = 3463615
+Rx Data Packets                 = 60151
+Rx Data Bytes                   = 78325695
+Tx Unicast Data Packets         = 47608
+Tx Multi/Broadcast Data Packets = 468
+Tx Data Packets per AC:
+ Best effort                    = 94108
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 1024
+Rx Data Packets per AC:
+ Best effort                    = 305758
+ Background                     = 170
+ Video                          = 0
+ Voice                          = 140
+Channel Utilization (0-255)     = <DISABLED>
+Tx Beacon Frames                = 44784
+Tx Mgmt Frames                  = 19357
+Rx Mgmt Frames                  = 157
+Rx Mgmt Frames dropped(RSSI too low) = 0
+Tx Ctl Frames                   = 0
+Rx Ctl Frames                   = 0
+Rx RSSI                         = 24
+Rx PHY errors                   = 24
+Rx CRC errors                   = 0
+Rx MIC errors                   = 0
+Rx Decryption errors            = 0
+Rx PN errors                    = 0
+Rx errors                       = 0
+Tx failures                     = 25
+Tx Dropped                      = 0
+Connections refuse Radio limit  = 0
+Connections refuse Vap limit    = 0
+802.11 Auth Attempts            = 12
+802.11 Auth Success             = 11
+MLME Authorize Attempts         = 11
+MLME Authorize Success          = 11
+Self BSS chan util              = 8
+OBSS chan util                  = 3
+lithium_cycle_counts:
+lithium_cycle_cnt: Chan NF (BDF averaged NF_dBm) = -89
+lithium_cycle_cnt: Tx Frame Cnt = 235743900
+lithium_cycle_cnt: Rx Frame Cnt = 102592983
+lithium_cycle_cnt: Rx Clear Cnt = 387133309
+lithium_cycle_cnt: Cycle Cnt    = 294714518
+lithium_cycle_cnt: Phy Err Cnt  = 24
+lithium_cycle_cnt: Chan Tx Pwr  = 10
+Number of Active Vaps           = 1
+Throughput (kbps)               = <DISABLED>
+PER over configured period (%)  = <DISABLED>
+Total PER (%)                   = 0
+Co-located RNR stats:
+ Created vap:                   = 0
+ Active vap:                    = 0
+ RNR count:                     = 0
+ 6GHz SoC status:               = 0
+
+VAP Level Stats: ath1 (under radio wifi0)
+Tx Data Packets                 = 48076
+Tx Data Bytes                   = 3463615
+Tx Offer Data Packets           = 48107
+Tx Offer Data Bytes             = 3475633
+Tx Data Payload Bytes           = 2801041
+Tx Eapol Packets                = 0
+Rx Data Packets                 = 60151
+Rx Data Bytes                   = 78325695
+Rx Data Payload Bytes           = 77483581
+Tx Data Packets per AC:
+ Best effort                    = 94108
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 1024
+Rx Data Packets per AC:
+ Best effort                    = 305758
+ Background                     = 170
+ Video                          = 0
+ Voice                          = 140
+Tx Unicast Data Packets         = 47608
+Rx Unicast Data Packets         = 59966
+Tx Multi/Broadcast Data Packets = 468
+Rx Multi/Broadcast Data Packets = 185
+Last Packet Error Rate(PER)     = 0
+Average Tx Rate (kbps)          = 52833
+Average Rx Rate (kbps)          = 81855
+Tx multicast Data Packets       = 107
+Tx Broadcast Data Packets       = 361
+Tx Broadcast Data Bytes         = 21994
+Rx multicast Data Packets       = 13
+Rx Broadcast Data Packets       = 172
+Packets Dropped                 = 0
+Packets Errored                 = 25
+Rx errors                       = 0
+Rx Dropped                      = 0
+Tx failures                     = 25
+Tx Dropped                      = 0
+Tx Mgmt Failures                = 0
+Host Discard                    = 0
+Rx MIC Errors                   = 0
+Rx PN Errors                    = 0
+Last Tx rate for unicast Packets        = 58500
+Last Tx rate for unicast Packets(mcs)   = 6
+Last Tx rate for multicast Packets      = 1000
+Last Tx rate for multicast Packets(mcs) = 3
+Total number of offchan TX mgmt frames = 0
+Total number of offchan TX data frames = 0
+Number of failed offchan TX frames = 0
+Total beacons sent to fw in SWBA intr = 0
+Retries                         = 52461
+Tx Mgmt Packets                 = 19357
+Rx Mgmt Packets                 = 157
+Connections refuse Radio limit  = 0
+Connections refuse Vap limit    = 0
+802.11 Auth Attempts            = 12
+802.11 Auth Success             = 11
+MLME Authorize Attempts         = 11
+MLME Authorize Success          = 11
+Peer delete req                 = 0
+Peer delete resp                = 0
+Peer delete all req             = 0
+Peer delete all resp            = 0
+Excessive retries per AC:
+ Best effort                    = 2
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 0
+Beacon success                  = 44734
+Beacon failed                   = 50
+Probe request drops             = 1402
+OOB probe requests              = 0
+Wildcard probe requests drops   = 0
+FILS enable                     = 0
+FILS frames sent                = 0
+FILS frames sent fail           = 0
+6GHz stats:
+ unsolicited probe response success = 0
+ unsolicited probe response failed = 0
+ 20TU probe response status     = 0
+ 20TU probe response interval   = 0
+Non-Tx Profile rollback count when ema_ext enabled = 0
+IE Overflow count for Tx/Non-Tx VAP Beacon resource overflow = 0
+Total number of dpp offchan tx mgmt frames queued = 0
+Total number of dpp offchan tx mgmt frames completed = 0
+
+Node Level Stats: a8:74:1d:be:20:48 (under VAP ath1)
+Tx Data Packets                 = 33
+Tx Data Bytes                   = 2292
+Tx Success Data Packets         = 33
+Tx Success Data Bytes           = 2292
+Tx Data Packets per AC:
+ Best effort                    = 25
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 8
+Rx Data Packets per AC:
+ Best effort                    = 204
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 2
+Tx Success Unicast Data Packets = 33
+TX MCS Stats
+OFDM 48 Mbps: 0
+OFDM 24 Mbps: 0
+OFDM 12 Mbps: 0
+OFDM 6 Mbps : 0
+OFDM 54 Mbps: 0

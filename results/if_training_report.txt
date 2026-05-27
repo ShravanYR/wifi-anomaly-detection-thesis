@@ -1,0 +1,64 @@
+  Raw rows loaded   : 79,647
+  Unique clients    : 9
+  After exclusions  : 79,647 rows, 9 clients
+  Training clients  : 8
+  Validation client : a8:74:1d:47:e6:46 (2,467 rows)
+  Idle rows   : 75,768  (98.2%)
+  Active rows : 1,412  (1.8%)
+  Feature stats for ACTIVE rows (is_active=1):
+       tx_packet_rate  rx_packet_rate  tx_byte_rate  rx_byte_rate  tx_success_rate  retry_rate  tx_failed_rate       rssi  tx_throughput_mbps  rx_throughput_mbps  low_mcs_ratio  mid_mcs_ratio  high_mcs_ratio  mcs_weighted_score  mcs_entropy
+count       1412.0000       1412.0000     1412.0000     1412.0000        1412.0000   1412.0000       1412.0000  1412.0000           1412.0000           1412.0000      1412.0000      1412.0000       1412.0000           1412.0000    1412.0000
+mean           0.6081          0.6043      129.2764      134.4357           0.9960      0.1844          0.0040    27.8931             47.3593            111.8821         0.5794         0.3528          0.0678              3.1234       2.0480
+std            0.7623          0.6861      248.7880      228.1343           0.0487      0.2674          0.0487     5.8599             23.2463             33.2144         0.3327         0.2622          0.1689              2.1068       0.5766
+min            0.0909          0.0000        5.4545        0.0000           0.0000      0.0000          0.0000    16.0000              1.0180             51.1980         0.0002         0.0007          0.0000              0.3361       1.0675
+25%            0.1000          0.1000        6.0000        6.0000           1.0000      0.0000          0.0000    24.0000             38.1950             89.0555         0.2859         0.1175          0.0000              1.9496       1.7249
+50%            0.4000          0.4500       42.8000       64.7000           1.0000      0.0000          0.0000    27.0000             50.8025            105.6340         0.5402         0.4459          0.0007              3.1325       2.2453
+75%            0.6000          0.7000       62.6000      100.1000           1.0000      0.3333          0.0000    30.0000             59.6790            125.1678         0.8678         0.6153          0.0269              4.0662       2.4493
+max            4.6000          3.8000     1835.6000     1287.2000           1.0000      1.0000          1.0000    44.0000            110.8540            216.7000         0.9993         0.7723          0.5685              7.7791       2.8239
+
+  tx_success_rate mean on active rows: 0.9960  (should be close to 1.0)
+  rssi mean on active rows           : 27.9
+  Training rows     : 75,768
+  Features used     : ['rssi']
+  Anomalies flagged : 0 (0.00%)
+  Score range       : [-0.6823, -0.4354]
+  Score mean        : -0.5079
+  Training rows     : 1,412
+  Features used     : 15 features
+  Anomalies flagged : 15 (1.06%)
+  Score range       : [-0.6925, -0.3907]
+  Score mean        : -0.4637
+  Total rows scored    : 79,647
+  Total anomalies      : 15 (0.02%)
+
+  Anomalies per client:
+                   anomalies  total_rows  anomaly_pct
+client_mac                                           
+a8:74:1d:47:e6:3e          1        9967         0.01
+a8:74:1d:47:e6:46          0        2467         0.00
+a8:74:1d:47:e6:56          1        9923         0.01
+a8:74:1d:47:e6:5e          0        9967         0.00
+a8:74:1d:47:e6:66          1        9967         0.01
+a8:74:1d:47:e6:6e          0        7500         0.00
+a8:74:1d:47:e6:76          0        9967         0.00
+a8:74:1d:47:e6:8e          0        9968         0.00
+a8:74:1d:47:e6:96         12        9921         0.12
+  Full scored dataset : results/if_scores_all.csv
+  Anomalies only      : results/if_anomalies.csv  (15 rows)
+  Metadata            : models/model_metadata.json
+  Validation client rows    : 2,467
+  Anomalies flagged         : 0 (0.00%)
+  (Expected: similar rate to training clients if behaviour is normal)
+  Saved: results/if_validation_client.csv
+  Duration            : 3.2 seconds
+  Models saved in     : models/
+  Results saved in    : results/
+
+  NEXT STEPS:
+  1. Check results/if_anomalies.csv — do flagged rows make sense?
+  2. Check anomaly rate per client — any client >5% is suspicious
+     OR your contamination parameter needs adjustment
+  3. Adjust IF_CONTAMINATION up/down and retrain if needed:
+     Too many alerts -> lower contamination (e.g. 0.005)
+     Too few alerts  -> raise contamination (e.g. 0.02)
+  4. Once satisfied with IF results -> proceed to Autoencoder

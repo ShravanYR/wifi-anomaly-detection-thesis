@@ -1,0 +1,79 @@
+REAL EXPERIMENT EVALUATION REPORT
+Generated: 2026-05-21 17:16:57
+(Automatic boundary detection — no manual timestamps needed)
+=======================================================
+
+=======================================================
+  EXPERIMENT: SIGNAL_DEGRADATION
+  WiFi signal degradation experiment
+  Device : a8:74:1d:47:e6:3e
+=======================================================
+  Total rows loaded  : 1,128  (8 clients)
+  Rows for device    : 141
+  Time range         : 2024-04-22 16:28:13 -> 2024-04-22 16:56:08
+  Active rows        : 56 (39.7%)
+
+  AUTOMATIC BOUNDARY DETECTION:
+  [BOUNDARY] ruptures not installed — using sliding window fallback
+             Install for better accuracy: pip install ruptures
+  [BOUNDARY] Method: sliding window comparison
+  [BOUNDARY] Split at row 60 of 141 | signal shift: 0.6654 | confidence: high
+  [BOUNDARY] Detected split timestamp: 2024-04-22 16:38:13
+  Detected split     : 2024-04-22 16:38:13
+  Method             : sliding_window  |  Confidence: high
+
+  Period split:
+    Normal period  :   60 rows  (2024-04-22 16:28:13 -> 2024-04-22 16:38:13)
+    Anomaly period :   81 rows  (2024-04-22 16:38:13 -> 2024-04-22 16:56:08)
+
+  NORMAL PERIOD (false alarm check):
+    Rows         : 60
+    Active rows  : 22
+    Flagged      : 0 (0.0%)  [training baseline: 1.5%]
+
+  ANOMALY PERIOD (detection check):
+    Rows              : 81
+    Active rows       : 34
+    Flagged (all)     : 0 (0.0%)
+    Flagged (active)  : 0/34 (0.0%)
+
+    ** DETECTION RATE: 0.0% (on active rows) **
+
+  ANOMALY SCORE DISTRIBUTION:
+    Normal period  — mean: -0.5867  max: -0.5517
+    Anomaly period — mean: -0.5267  max: -0.4354
+    (Less negative = more anomalous)
+    Score shift     : +0.0600  (model sensed change)
+
+  Feature comparison — signal_degradation
+  Feature                                Normal avg   Anomaly avg      Change
+  -----------------------------------  ------------  ------------  ----------
+  retry_rate                                 0.0000        0.1471         N/A
+  tx_failed_rate                             0.0000        0.0000         N/A
+  tx_success_rate                            1.0000        1.0000       ~ +0%
+  tx_packet_rate                             0.3818        0.3382      ↓ -11%
+  rx_packet_rate                             0.3864        0.3382      ↓ -12%
+  rssi                                      51.4091       25.5588      ↓ -50%
+  mcs_entropy                                2.1824        1.9065      ↓ -13%
+  low_mcs_ratio                              0.0000        0.0000         N/A
+  high_mcs_ratio                             0.6058        0.3191      ↓ -47%
+  tx_throughput_mbps                       187.2966       75.0700      ↓ -60%
+  rx_throughput_mbps                       122.5106       30.2635      ↓ -75%
+
+  THESIS RESULT LINE:
+    signal_degradation: IF detection = 0.0% | false alarm = 0.0% | boundary method = sliding_window | confidence = high
+
+  Saved: results/real_signal_degradation_evaluation.csv
+  (period column: normal/anomaly — use for thesis plots)
+
+=======================================================
+  SUMMARY TABLE FOR THESIS
+  Experiment                      IF Detection   False Alarm
+  ----------------------------  --------------  ------------
+  signal_degradation                      0.0%          0.0%
+
+  Synthetic testing reference:
+  retry_storm (synthetic)                16.0%          1.5%
+  signal_degradation (synth)             12.0%          1.5%
+  link_failure (synthetic)              100.0%          1.5%
+  traffic_burst (synthetic)             100.0%          1.5%

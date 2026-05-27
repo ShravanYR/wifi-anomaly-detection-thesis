@@ -1,0 +1,200 @@
+Percentage of TX pkt in TWT session = 0
+Percentage of RX pkt in TWT session = 0
+
+Node Level Stats: 00:00:00:00:00:00 (under VAP ath1)
+Tx Data Packets                 = 0
+Tx Data Bytes                   = 0
+Tx Success Data Packets         = 0
+Tx Success Data Bytes           = 0
+Tx Data Packets per AC:
+ Best effort                    = 0
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 0
+Rx Data Packets per AC:
+ Best effort                    = 0
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 0
+Tx Success Unicast Data Packets = 0
+TX MCS Stats
+OFDM 48 Mbps: 0
+OFDM 24 Mbps: 0
+OFDM 12 Mbps: 0
+OFDM 6 Mbps : 0
+OFDM 54 Mbps: 0
+OFDM 36 Mbps: 0
+OFDM 18 Mbps: 0
+OFDM 9 Mbps : 0
+CCK 11 Mbps Long  : 0
+CCK 5.5 Mbps Long : 0
+CCK 2 Mbps Long   : 0
+CCK 1 Mbps Long   : 0
+CCK 11 Mbps Short : 0
+CCK 5.5 Mbps Short: 0
+CCK 2 Mbps Short  : 0
+HT MCS 0 (BPSK 1/2)  : 0
+HT MCS 1 (QPSK 1/2)  : 0
+HT MCS 2 (QPSK 3/4)  : 0
+HT MCS 3 (16-QAM 1/2): 0
+HT MCS 4 (16-QAM 3/4): 0
+HT MCS 5 (64-QAM 2/3): 0
+HT MCS 6 (64-QAM 3/4): 0
+HT MCS 7 (64-QAM 5/6): 0
+VHT MCS 0 (BPSK 1/2)     : 0
+VHT MCS 1 (QPSK 1/2)     : 0
+VHT MCS 2 (QPSK 3/4)     : 0
+VHT MCS 3 (16-QAM 1/2)   : 0
+VHT MCS 4 (16-QAM 3/4)   : 0
+VHT MCS 5 (64-QAM 2/3)   : 0
+VHT MCS 6 (64-QAM 3/4)   : 0
+VHT MCS 7 (64-QAM 5/6)   : 0
+VHT MCS 8 (256-QAM 3/4)  : 0
+VHT MCS 9 (256-QAM 5/6)  : 0
+VHT MCS 10 (1024-QAM 3/4): 0
+VHT MCS 11 (1024-QAM 5/6): 0
+HE MCS 0 (BPSK 1/2)     : 0
+HE MCS 1 (QPSK 1/2)     : 0
+HE MCS 2 (QPSK 3/4)     : 0
+HE MCS 3 (16-QAM 1/2)   : 0
+HE MCS 4 (16-QAM 3/4)   : 0
+HE MCS 5 (64-QAM 2/3)   : 0
+HE MCS 6 (64-QAM 3/4)   : 0
+HE MCS 7 (64-QAM 5/6)   : 0
+HE MCS 8 (256-QAM 3/4)  : 0
+HE MCS 9 (256-QAM 5/6)  : 0
+HE MCS 10 (1024-QAM 3/4): 0
+HE MCS 11 (1024-QAM 5/6): 0
+HE MCS 12 (4096-QAM 3/4): 0
+HE MCS 13 (4096-QAM 5/6): 0
+RX MCS Stats
+OFDM 48 Mbps: 0
+OFDM 24 Mbps: 0
+OFDM 12 Mbps: 0
+OFDM 6 Mbps : 0
+OFDM 54 Mbps: 0
+OFDM 36 Mbps: 0
+OFDM 18 Mbps: 0
+OFDM 9 Mbps : 0
+CCK 11 Mbps Long  : 0
+CCK 5.5 Mbps Long : 0
+CCK 2 Mbps Long   : 0
+CCK 1 Mbps Long   : 0
+CCK 11 Mbps Short : 0
+CCK 5.5 Mbps Short: 0
+CCK 2 Mbps Short  : 0
+HT MCS 0 (BPSK 1/2)  : 0
+HT MCS 1 (QPSK 1/2)  : 0
+HT MCS 2 (QPSK 3/4)  : 0
+HT MCS 3 (16-QAM 1/2): 0
+HT MCS 4 (16-QAM 3/4): 0
+HT MCS 5 (64-QAM 2/3): 0
+HT MCS 6 (64-QAM 3/4): 0
+HT MCS 7 (64-QAM 5/6): 0
+VHT MCS 0 (BPSK 1/2)     : 0
+VHT MCS 1 (QPSK 1/2)     : 0
+VHT MCS 2 (QPSK 3/4)     : 0
+VHT MCS 3 (16-QAM 1/2)   : 0
+VHT MCS 4 (16-QAM 3/4)   : 0
+VHT MCS 5 (64-QAM 2/3)   : 0
+VHT MCS 6 (64-QAM 3/4)   : 0
+VHT MCS 7 (64-QAM 5/6)   : 0
+VHT MCS 8 (256-QAM 3/4)  : 0
+VHT MCS 9 (256-QAM 5/6)  : 0
+VHT MCS 10 (1024-QAM 3/4): 0
+VHT MCS 11 (1024-QAM 5/6): 0
+HE MCS 0 (BPSK 1/2)     : 0
+HE MCS 1 (QPSK 1/2)     : 0
+HE MCS 2 (QPSK 3/4)     : 0
+HE MCS 3 (16-QAM 1/2)   : 0
+HE MCS 4 (16-QAM 3/4)   : 0
+HE MCS 5 (64-QAM 2/3)   : 0
+HE MCS 6 (64-QAM 3/4)   : 0
+HE MCS 7 (64-QAM 5/6)   : 0
+HE MCS 8 (256-QAM 3/4)  : 0
+HE MCS 9 (256-QAM 5/6)  : 0
+HE MCS 10 (1024-QAM 3/4): 0
+HE MCS 11 (1024-QAM 5/6): 0
+HE MCS 12 (4096-QAM 3/4): 0
+HE MCS 13 (4096-QAM 5/6): 0
+TX OFDMA Stats
+RU_26: 0
+RU_52: 0
+RU_106: 0
+RU_242: 0
+RU_484: 0
+RU_996: 0
+Tx Success Unicast Data Bytes   = 0
+Tx Success Multicast Data Packets = 0
+Tx Success Multicast Data Bytes = 0
+Tx Success Broadcast Data Packets = 0
+Tx Success Broadcast Data Bytes = 0
+Last Packet Error Rate (PER)    = 0
+Rx Data Packets                 = 0
+Rx Data Bytes                   = 0
+Rx Unicast   Data Packets       = 0
+Rx Unicast   Data Bytes         = 0
+Rx Multicast Data Packets       = 0
+Rx Multicast Data Bytes         = 0
+Average Tx Rate (kbps)          = 0
+Average Rx Rate (kbps)          = 0
+Last tx rate                    = 0
+Last rx rate                    = 0
+Last mgmt rx rate               = 0
+Rx MIC Errors                   = 0
+Rx Decryption errors            = 0
+Rx PN errors                    = 0
+Rx errors                       = 0
+Packets Queued                  = 0
+Tx failed                       = 0
+Host Discard                    = 0
+Tx Mgmt Packets                 = 0
+Rx Mgmt Packets                 = 0
+Rx mpdu count                   = 0
+Rx ppdu count                   = 0
+Rx retry count                  = 0
+Tx ppdu count                   = 0
+Tx mpdu success count           = 0
+Tx mpdu tried count             = 0
+MSDU: Tx failed retry count     = 0
+MSDU: Tx retry count            = 0
+MSDU: Tx multiple retry count   = 0
+Avg ppdu Tx rate(kbps)          = 0
+Avg ppdu Rx rate(kbps)          = 0
+Tx Dropped(valid for offload driver)     = 0
+Tx RSSI for last acknowledged pkt  = 0
+Rx RSSI                         = 0
+Rx Average RSSI                 = 0
+Rx MGMT RSSI                    = 0
+Excessive retries per AC:
+ Best effort                    = 0
+ Background                     = 0
+ Video                          = 0
+ Voice                          = 0
+Ack RSSI chain 1                = 0
+Ack RSSI chain 2                = 0
+Ack RSSI chain 3                = 0
+Ack RSSI chain 4                = 0
+Band Width                      = 20
+stbc                            tx(0) rx(0)
+chainmask (NSS)                 tx(0) rx(0)
+Tx packets for last one second  = 0
+Tx bytes for last one second    = 0
+Rx packets for last one second  = 0
+Rx bytes for last one second    = 0
+TWT event type                  = 0
+TWT flow ID                     = 0
+Broadcast TWT                   = 0
+TWT Trigger                     = 0
+TWT Announcement                = 0
+TWT Dialog ID                   = 0
+TWT Wake duration (us)          = 0
+TWT Wake interval (us)          = 0
+TWT SP offset (us)              = 0
+Percentage of TX pkt in TWT session = 0
+Percentage of RX pkt in TWT session = 0
+
+###APSTATS_END###
+###SNAP_END###
+
+

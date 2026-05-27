@@ -1,0 +1,35 @@
+{
+  "trained_at": "2026-05-07T17:09:46.514390",
+  "input_file": "ml_ready_data.csv",
+  "contamination": 0.01,
+  "n_estimators": 200,
+  "idle_features": [
+    "rssi"
+  ],
+  "active_features": [
+    "tx_packet_rate",
+    "rx_packet_rate",
+    "tx_byte_rate",
+    "rx_byte_rate",
+    "tx_success_rate",
+    "retry_rate",
+    "tx_failed_rate",
+    "rssi",
+    "tx_throughput_mbps",
+    "rx_throughput_mbps",
+    "low_mcs_ratio",
+    "mid_mcs_ratio",
+    "high_mcs_ratio",
+    "mcs_weighted_score",
+    "mcs_entropy"
+  ],
+  "idle_train_rows": 75768,
+  "active_train_rows": 1412,
+  "idle_anomalies_train": 0,
+  "active_anomalies_train": 15,
+  "exclude_macs": [
+    "a8:74:1d:be:20:48",
+    "a8:74:1d:47:e6:4e"
+  ],
+  "validation_mac": "a8:74:1d:47:e6:46"
+}
