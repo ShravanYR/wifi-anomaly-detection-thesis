@@ -1,5 +1,5 @@
 REAL EXPERIMENT EVALUATION REPORT
-Generated: 2026-05-21 17:16:57
+Generated: 2026-05-27 16:25:57
 (Automatic boundary detection — no manual timestamps needed)
 =======================================================
 
@@ -14,13 +14,11 @@ Generated: 2026-05-21 17:16:57
   Active rows        : 56 (39.7%)
 
   AUTOMATIC BOUNDARY DETECTION:
-  [BOUNDARY] ruptures not installed — using sliding window fallback
-             Install for better accuracy: pip install ruptures
-  [BOUNDARY] Method: sliding window comparison
+  [BOUNDARY] Method: PELT change point detection (ruptures)
   [BOUNDARY] Split at row 60 of 141 | signal shift: 0.6654 | confidence: high
   [BOUNDARY] Detected split timestamp: 2024-04-22 16:38:13
   Detected split     : 2024-04-22 16:38:13
-  Method             : sliding_window  |  Confidence: high
+  Method             : PELT  |  Confidence: high
 
   Period split:
     Normal period  :   60 rows  (2024-04-22 16:28:13 -> 2024-04-22 16:38:13)
@@ -61,7 +59,7 @@ Generated: 2026-05-21 17:16:57
   rx_throughput_mbps                       122.5106       30.2635      ↓ -75%
 
   THESIS RESULT LINE:
-    signal_degradation: IF detection = 0.0% | false alarm = 0.0% | boundary method = sliding_window | confidence = high
+    signal_degradation: IF detection = 0.0% | false alarm = 0.0% | boundary method = PELT | confidence = high
 
   Saved: results/real_signal_degradation_evaluation.csv
   (period column: normal/anomaly — use for thesis plots)
