@@ -1,26 +1,134 @@
-# Python
+# # Python
+# __pycache__/
+# *.py[cod]
+# *.pyo
+# .Python
+# *.egg-info/
+# .eggs/
+# dist/
+# build/
+# venv/
+# .venv/
+# env/
+
+# # IDE / OS
+# .vscode/
+# .idea/
+# *.swp
+# .DS_Store
+# Thumbs.db
+# desktop.ini
+
+# # Jupyter
+# .ipynb_checkpoints/
+
+# # Logs
+# *.log
+#  -Force
+
+ # ==================================================
+# Python cache and compiled files
+# ==================================================
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyd
 .Python
 *.egg-info/
 .eggs/
-dist/
-build/
+
+# ==================================================
+# Virtual environments
+# ==================================================
 venv/
 .venv/
 env/
+ENV/
 
-# IDE / OS
+# ==================================================
+# IDE and operating system files
+# ==================================================
 .vscode/
 .idea/
 *.swp
+*.swo
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Jupyter
+# ==================================================
+# Jupyter notebooks
+# ==================================================
 .ipynb_checkpoints/
 
-# Logs
+# ==================================================
+# Logs and temporary files
+# ==================================================
 *.log
+live_normal_log.txt
+*.tmp
+*.temp
+
+# ==================================================
+# Local environment and secrets
+# ==================================================
+.env
+.env.*
+!.env.example
+
+# ==================================================
+# Raw WiFi telemetry data
+# ==================================================
+data_raw/
+data_raw_active/
+data_raw_normal/
+data_raw_retry_storm/
+data_raw_traffic_burst/
+
+# ==================================================
+# Generated datasets and intermediate data
+# ==================================================
+clean_output.csv
+clean_filtered.csv
+clean_output_data_raw_active.csv
+ml_ready_data_raw.csv
+ml_ready_data_raw_active.csv
+combined_apstats.txt
+
+# Ignore CSV files by default
+*.csv
+
+# ==================================================
+# Generated model files: ignore by default
+# ==================================================
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.npy
+
+# ==================================================
+# Allow important trained models and supporting files
+# ==================================================
+!models/ae_active_model.pt
+!models/ae_idle_model.pt
+!models/if_active_model.pkl
+!models/if_idle_model.pkl
+!models/scaler_active.pkl
+!models/scaler_idle.pkl
+!models/threshold_active.npy
+!models/threshold_idle.npy
+!models/model_metadata.json
+
+# ==================================================
+# Generated experiment results
+# ==================================================
+results/**/*.csv
+results/**/*.txt
+results/**/*.json
+
+# ==================================================
+# Build and distribution files
+# ==================================================
+build/
+dist/
