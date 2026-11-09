@@ -1,0 +1,40 @@
+  Training rows : 78,274
+  Val client    : a8:74:1d:47:e6:46 (11,182 rows)
+  Idle   : 7 rows
+  Active : 78,267 rows
+
+  [IDLE] WARNING: Only 7 idle rows found.
+  [IDLE] Minimum required: 100 rows.
+  [IDLE] Idle model training SKIPPED.
+  [IDLE] ACTION REQUIRED: Keep the idle model from the original
+  [IDLE] two-day training run (ae_idle_model.pt, ae_scaler_idle.pkl).
+  [IDLE] Only the active model will be updated by this run.
+  [ACTIVE] Outlier removal (IQR factor = 10.0):
+    Rows before : 78,267
+    Rows removed: 2  (0.00%)
+    Rows after  : 78,265
+    Flagged features (with outlier counts):
+      tx_byte_rate                       :    2 rows  bounds=[82.4000, 3896.0000]  max_val_seen=0.0000
+      rx_byte_rate                       :    2 rows  bounds=[124.2000, 3858.0000]  max_val_seen=35.6000
+
+  Threshold sweep (active):
+    95th pct: threshold=0.105639  flagged=3914 (5.00%)
+    97th pct: threshold=0.140375  flagged=2348 (3.00%)
+    99th pct: threshold=0.267764  flagged=783 (1.00%)
+  Primary threshold (99th pct): 0.267764
+  Saved -> models_active/ae_active_model.pt
+
+  Threshold sweep summary:
+    Percentile      Idle thr    Active thr
+  ------------  ------------  ------------
+            95           nan      0.105639
+            97           nan      0.140375
+            99           nan      0.267764
+
+  To use 95th pct threshold: update ae_metadata.json:
+    idle_threshold   -> nan
+    active_threshold -> 0.105639
+  Duration : 284.0s
+  Models   : models_active/ae_*.pt
+
+  NEXT STEP: python autoencoder_evaluator.py <experiment_csv>

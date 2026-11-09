@@ -7,8 +7,8 @@ import pandas as pd
 import numpy as np
 import re
 
-INPUT_FILE  = "clean_output_ex_signalD.csv"
-OUTPUT_FILE = "ml_ready_data_ex_signalD.csv"
+INPUT_FILE  = "clean_output_ex_RStorm.csv"
+OUTPUT_FILE = "ml_ready_data_ex_RStorm.csv"
 
 
 def get_mcs_index(col):

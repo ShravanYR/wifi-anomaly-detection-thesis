@@ -45,7 +45,7 @@ from datetime import datetime
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-INPUT_FILE   = "ml_ready_data.csv"
+INPUT_FILE   = "ml_ready_data_ex_signalD.csv"
 MODELS_DIR   = "models"
 RESULTS_DIR  = "results"
 

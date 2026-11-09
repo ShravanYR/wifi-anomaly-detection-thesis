@@ -1,0 +1,54 @@
+{
+  "trained_at": "2026-06-09T19:33:11.044909",
+  "idle_architecture": "3->[8]->4->[8]->3",
+  "active_architecture": "15->[32,16]->8->[16,32]->15",
+  "idle_features": [
+    "rssi",
+    "tx_success_rate",
+    "retry_rate"
+  ],
+  "active_features": [
+    "tx_packet_rate",
+    "rx_packet_rate",
+    "tx_byte_rate",
+    "rx_byte_rate",
+    "tx_success_rate",
+    "retry_rate",
+    "tx_failed_rate",
+    "rssi",
+    "tx_throughput_mbps",
+    "rx_throughput_mbps",
+    "low_mcs_ratio",
+    "mid_mcs_ratio",
+    "high_mcs_ratio",
+    "mcs_weighted_score",
+    "mcs_entropy"
+  ],
+  "outlier_removal_applied": true,
+  "outlier_iqr_factor": 10.0,
+  "idle_rows_before_clean": 87365,
+  "idle_rows_after_clean": 87365,
+  "idle_outliers_removed": 0,
+  "active_rows_before_clean": 2660,
+  "active_rows_after_clean": 2534,
+  "active_outliers_removed": 126,
+  "threshold_percentile": 99,
+  "idle_threshold": 0.26197555661201477,
+  "active_threshold": 0.3226895332336426,
+  "idle_thresholds_all": {
+    "threshold_pct95": 0.09979087859392166,
+    "threshold_pct97": 0.1611066609621048,
+    "threshold_pct99": 0.26197555661201477
+  },
+  "active_thresholds_all": {
+    "threshold_pct95": 0.15160614252090454,
+    "threshold_pct97": 0.2117084115743637,
+    "threshold_pct99": 0.3226895332336426
+  },
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "max_epochs": 200,
+  "early_stopping_patience": 20,
+  "best_idle_val_loss": 0.08474551141262054,
+  "best_active_val_loss": 0.06388822197914124
+}
