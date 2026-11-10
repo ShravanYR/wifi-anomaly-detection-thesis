@@ -1,0 +1,44 @@
+  Training rows : 90,025
+  Val client    : a8:74:1d:47:e6:46 (4,302 rows)
+  Idle   : 87,365 rows
+  Active : 2,660 rows
+  [IDLE] Outlier removal (IQR factor = 10.0):
+    Rows before : 87,365
+    Rows removed: 0  (0.00%)
+    Rows after  : 87,365
+
+  Threshold sweep (idle):
+    95th pct: threshold=0.099791  flagged=4281 (4.90%)
+    97th pct: threshold=0.161107  flagged=2324 (2.66%)
+    99th pct: threshold=0.261976  flagged=104 (0.12%)
+  Primary threshold (99th pct): 0.261976
+  Saved -> models/ae_idle_model.pt
+  [ACTIVE] Outlier removal (IQR factor = 10.0):
+    Rows before : 2,660
+    Rows removed: 126  (4.74%)
+    Rows after  : 2,534
+    Flagged features (with outlier counts):
+      tx_byte_rate                       :  126 rows  bounds=[-515.0000, 579.1000]  max_val_seen=1835.6000
+      rx_byte_rate                       :   23 rows  bounds=[-774.4000, 865.7000]  max_val_seen=1287.2000
+
+  Threshold sweep (active):
+    95th pct: threshold=0.151606  flagged=127 (5.01%)
+    97th pct: threshold=0.211708  flagged=76 (3.00%)
+    99th pct: threshold=0.322690  flagged=26 (1.03%)
+  Primary threshold (99th pct): 0.322690
+  Saved -> models/ae_active_model.pt
+
+  Threshold sweep summary:
+    Percentile      Idle thr    Active thr
+  ------------  ------------  ------------
+            95      0.099791      0.151606
+            97      0.161107      0.211708
+            99      0.261976      0.322690
+
+  To use 95th pct threshold: update ae_metadata.json:
+    idle_threshold   -> 0.099791
+    active_threshold -> 0.151606
+  Duration : 72.9s
+  Models   : models/ae_*.pt
+
+  NEXT STEP: python autoencoder_evaluator.py <experiment_csv>
